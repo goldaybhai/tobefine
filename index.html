@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allied SEO Works - SEO & Digital Marketing Agency</title>
+    <meta name="description" content="Grow your business with result-driven SEO and digital marketing solutions from Allied SEO Works. Over 5 years of proven experience helping businesses rank higher on search engines.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#2563eb",
+                        "primary-dark": "#1d4ed8",
+                        secondary: "#0f172a",
+                        accent: "#f59e0b",
+                        "accent-dark": "#d97706",
+                        light: "#f8fafc",
+                        dark: "#0f172a"
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'heading': ['Poppins', 'Inter', 'system-ui', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-in-out',
+                        'slide-up': 'slideUp 0.6s ease-out'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #0f172a 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-white">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="container mx-auto px-4 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">A</span>
+                    </div>
+                    <div>
+                        <h1 class="font-heading text-xl font-bold text-secondary">Allied SEO Works</h1>
+                        <p class="text-xs text-gray-500">Digital Marketing Agency</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <ul id="main-nav" class="flex space-x-8"></ul>
+                    <div class="flex space-x-4">
+                        <button id="contact-btn" class="px-6 py-2 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition-colors">
+                            Get Free Consultation
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-600 hover:text-primary">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-100">
+                <ul id="mobile-nav" class="mt-4 space-y-3"></ul>
+                <div class="mt-6">
+                    <button id="mobile-contact-btn" class="w-full px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition-colors">
+                        Get Free Consultation
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-gradient text-white">
+            <div class="container mx-auto px-4 lg:px-8 py-16 lg:py-24">
+                <div class="max-w-4xl mx-auto text-center animate-fade-in">
+                    <h2 class="font-heading text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+                        Grow Your Business with Result-Driven SEO & Digital Marketing
+                    </h2>
+                    <p class="text-xl mb-10 text-blue-100 max-w-3xl mx-auto">
+                        With over 5 years of proven experience, we help businesses rank higher on search engines, 
+                        increase website traffic, and generate quality leads through powerful and strategic SEO techniques.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button id="hero-consultation-btn" class="px-8 py-4 bg-accent text-dark font-semibold rounded-lg hover:bg-accent-dark transition-colors text-lg">
+                            Get Free Consultation
+                        </button>
+                        <button id="hero-quote-btn" class="px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors text-lg">
+                            Request Custom Quote
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="py-16 lg:py-24 bg-light">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="animate-slide-up">
+                        <h2 class="font-heading text-3xl lg:text-4xl font-bold text-secondary mb-6">
+                            About Allied SEO Works
+                        </h2>
+                        <div class="space-y-4 text-lg">
+                            <p>
+                                Allied SEO Works is a results-focused digital marketing agency with more than five years of expertise in SEO and organic growth strategies.
+                            </p>
+                            <p>
+                                We specialize in helping businesses improve their search engine rankings, increase online visibility, and generate consistent, high-quality leads.
+                            </p>
+                            <p>
+                                Our mission is to help brands grow online using data-driven SEO strategies and sustainable marketing solutions that deliver real and lasting results.
+                            </p>
+                        </div>
+                        <div class="mt-8">
+                            <div class="flex items-center space-x-8">
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold text-primary">5+</div>
+                                    <div class="text-gray-600">Years Experience</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold text-primary">100+</div>
+                                    <div class="text-gray-600">Projects Completed</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold text-primary">95%</div>
+                                    <div class="text-gray-600">Client Retention</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="animate-slide-up">
+                        <img src="https://picsum.photos/600/400?random=1" alt="SEO team analyzing data and strategy" class="rounded-xl shadow-2xl w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="py-16 lg:py-24">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="font-heading text-3xl lg:text-4xl font-bold text-secondary mb-4">
+                        Our SEO & Digital Marketing Services
+                    </h2>
+                    <p class="text-xl text-gray-600">
+                        Comprehensive solutions designed to improve rankings and drive organic traffic to your business.
+                    </p>
+                </div>
+                
+                <div id="services-grid" class="grid md:grid-cols-2 lg:grid-cols-4 gap-8"></div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 lg:py-24 bg-secondary text-white">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="font-heading text-3xl lg:text-4xl font-bold mb-6">
+                        Ready to Scale Your Business?
+                    </h2>
+                    <p class="text-xl mb-10 text-gray-300">
+                        Whether you're a startup or an established brand, our team is committed to delivering measurable growth and long-term success.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button id="cta-consultation-btn" class="px-8 py-4 bg-accent text-dark font-semibold rounded-lg hover:bg-accent-dark transition-colors text-lg">
+                            Get Free Consultation
+                        </button>
+                        <button id="cta-quote-btn" class="px-8 py-4 bg-white text-secondary font-semibold rounded-lg hover:bg-gray-200 transition-colors text-lg">
+                            Request Custom Quote
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-16 lg:py-24 bg-light">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="font-heading text-3xl lg:text-4xl font-bold text-secondary mb-4">
+                        Client Success Stories
+                    </h2>
+                    <p class="text-xl text-gray-600">
+                        See how businesses have grown with our result-driven SEO strategies.
+                    </p>
+                </div>
+                
+                <div id="testimonials-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="py-16 lg:py-24">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="max-w-2xl mx-auto bg-white rounded-2xl shadow-xl p-8 lg:p-12">
+                    <h2 class="font-heading text-3xl font-bold text-secondary mb-2 text-center">
+                        Get Your Free Consultation
+                    </h2>
+                    <p class="text-gray-600 mb-8 text-center">
+                        Fill out the form below and we'll get back to you within 24 hours.
+                    </p>
+                    
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Full Name *</label>
+                                <input type="text" id="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address *</label>
+                                <input type="email" id="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="company" class="block text-gray-700 font-medium mb-2">Company Name</label>
+                            <input type="text" id="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+                        </div>
+                        <div>
+                            <label for="service" class="block text-gray-700 font-medium mb-2">Service Interested In</label>
+                            <select id="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+                                <option value="">Select a service</option>
+                                <option value="seo">Search Engine Optimization (SEO)</option>
+                                <option value="local-seo">Local SEO</option>
+                                <option value="technical-seo">Technical SEO</option>
+                                <option value="keyword-research">Keyword Research & Strategy</option>
+                                <option value="all">All Services</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message *</label>
+                            <textarea id="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"></textarea>
+                        </div>
+                        <button type="submit" class="w-full px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors text-lg">
+                            Submit Request
+                        </button>
+                        <p class="text-sm text-gray-500 text-center">
+                            By submitting this form, you agree to our Privacy Policy. We'll never share your information.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="container mx-auto px-4 lg:px-8 py-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">A</span>
+                        </div>
+                        <div>
+                            <h3 class="font-heading text-xl font-bold">Allied SEO Works</h3>
+                            <p class="text-sm text-gray-400">Digital Marketing Agency</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Helping businesses grow online with data-driven SEO strategies and sustainable marketing solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading text-lg font-bold mb-6">Quick Links</h4>
+                    <ul id="footer-links-1" class="space-y-3"></ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading text-lg font-bold mb-6">Our Services</h4>
+                    <ul id="footer-links-2" class="space-y-3"></ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading text-lg font-bold mb-6">Contact Info</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt mt-1 text-primary"></i>
+                            <p class="text-gray-400">123 Business Street, Suite 456<br>New York, NY 10001</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-primary"></i>
+                            <p class="text-gray-400">+1 (555) 123-4567</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-primary"></i>
+                            <p class="text-gray-400">info@alliedseoworks.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 Allied SEO Works. All rights reserved. | <a href="#" class="hover:text-white transition-colors">Privacy Policy</a> | <a href="#" class="hover:text-white transition-colors">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-2xl p-8 max-w-md mx-4">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-check text-green-600 text-2xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-secondary mb-4">Thank You!</h3>
+                <p class="text-gray-600 mb-6">Your consultation request has been submitted successfully. Our team will contact you within 24 hours.</p>
+                <button id="close-modal-btn" class="px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition-colors">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Data Layer
+        const navigationData = [
+            { "label": "Home", "href": "#home", "icon": "fas fa-home" },
+            { "label": "About", "href": "#about", "icon": "fas fa-info-circle" },
+            { "label": "Services", "href": "#services", "icon": "fas fa-cogs" },
+            { "label": "Testimonials", "href": "#testimonials", "icon": "fas fa-star" },
+            { "label": "Contact", "href": "#contact", "icon": "fas fa-envelope" }
+        ];
+
+        const servicesData = [
+            { 
+                "title": "Search Engine Optimization (SEO)", 
+                "description": "Complete SEO solutions designed to improve rankings and drive organic traffic to your website.",
+                "icon": "fas fa-search",
+                "color": "bg-blue-100 text-primary"
+            },
+            { 
+                "title": "Local SEO", 
+                "description": "Optimize your business for local searches and improve Google Maps rankings to attract nearby customers.",
+                "icon": "fas fa-map-marker-alt",
+                "color": "bg-yellow-100 text-yellow-600"
+            },
+            { 
+                "title": "Technical SEO", 
+                "description": "Fix website errors, enhance performance, and ensure proper indexing by search engines.",
+                "icon": "fas fa-code",
+                "color": "bg-green-100 text-green-600"
+            },
+            { 
+                "title": "Keyword Research & Strategy", 
+                "description": "Identify high-value keywords that drive real business growth and optimize content accordingly.",
+                "icon": "fas fa-key",
+                "color": "bg-purple-100 text-purple-600"
+            }
+        ];
+
+        const testimonialsData = [
+            {
+                "name": "Sarah Johnson",
+                "role": "Marketing Director, TechStart Inc.",
+                "content": "Allied SEO Works transformed our online presence. Our organic traffic increased by 300% in just 6 months!",
+                "image": "https://picsum.photos/100?random=2"
+            },
+            {
+                "name": "Michael Chen",
+                "role": "Founder, RetailPlus",
+                "content": "Their local SEO strategy helped us dominate our market. We're now #1 for all our target keywords locally.",
+                "image": "https://picsum.photos/100?random=3"
+            },
+            {
+                "name": "Emily Rodriguez",
+                "role": "CEO, HealthFirst Clinic",
+                "content": "The team at Allied SEO Works is phenomenal. They delivered measurable results and exceeded our expectations.",
+                "image": "https://picsum.photos/100?random=4"
+            }
+        ];
+
+        const footerLinks1 = [
+            { "label": "Home", "href": "#home" },
+            { "label": "About Us", "href": "#about" },
+            { "label": "Services", "href": "#services" },
+            { "label": "Case Studies", "href": "#case-studies" },
+            { "label": "Contact", "href": "#contact" }
+        ];
+
+        const footerLinks2 = [
+            { "label": "SEO Services", "href": "#seo" },
+            { "label": "Local SEO", "href": "#local-seo" },
+            { "label": "Technical SEO", "href": "#technical-seo" },
+            { "label": "Keyword Research", "href": "#keyword-research" },
+            { "label": "Digital Marketing", "href": "#digital-marketing" }
+        ];
+
+        // Reusable Render Functions
+        function renderNavigation(items) {
+            return items.map(item => 
+                `<li><a href="${item.href}" class="text-gray-600 hover:text-primary font-medium transition-colors flex items-center space-x-2">
+                    <i class="${item.icon}"></i>
+                    <span>${item.label}</span>
+                </a></li>`
+            ).join("");
+        }
+
+        function renderServices(items) {
+            return items.map((item, index) => 
+                `<div class="bg-white rounded-xl p-6 shadow-lg card-hover border border-gray-100">
+                    <div class="w-12 h-12 rounded-lg ${item.color} flex items-center justify-center mb-6">
+                        <i class="${item.icon} text-xl"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-secondary mb-4">${item.title}</h3>
+                    <p class="text-gray-600">${item.description}</p>
+                    <div class="mt-6">
+                        <button data-service="${index}" class="text-primary font-medium hover:text-primary-dark flex items-center space-x-2 service-learn-more">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>`
+            ).join("");
+        }
+
+        function renderTestimonials(items) {
+            return items.map(item => 
+                `<div class="bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <img src="${item.image}" alt="${item.name}" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-secondary">${item.name}</h4>
+                            <p class="text-gray-500 text-sm">${item.role}</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"${item.content}"</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>`
+            ).join("");
+        }
+
+        function renderFooterLinks(items) {
+            return items.map(item => 
+                `<li><a href="${item.href}" class="text-gray-400 hover:text-white transition-colors">${item.label}</a></li>`
+            ).join("");
+        }
+
+        // DOM Population
+        document.getElementById("main-nav").innerHTML = renderNavigation(navigationData);
+        document.getElementById("mobile-nav").innerHTML = renderNavigation(navigationData);
+        document.getElementById("services-grid").innerHTML = renderServices(servicesData);
+        document.getElementById("testimonials-grid").innerHTML = renderTestimonials(testimonialsData);
+        document.getElementById("footer-links-1").innerHTML = renderFooterLinks(footerLinks1);
+        document.getElementById("footer-links-2").innerHTML = renderFooterLinks(footerLinks2);
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        
+        mobileMenuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        // Smooth Scrolling for Navigation Links
+        document.addEventListener("click", function(event) {
+            // Handle navigation links
+            const navLink = event.target.closest("a[href^='#']");
+            if (navLink && !navLink.closest("#contact-form")) {
+                event.preventDefault();
+                const targetId = navLink.getAttribute("href");
+                if (targetId === "#home") {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                } else {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                    }
+                }
+                // Close mobile menu if open
+                if (!mobileMenu.classList.contains("hidden")) {
+                    mobileMenu.classList.add("hidden");
+                }
+            }
+        });
+
+        // Contact Form Handling
+        const contactForm = document.getElementById("contact-form");
+        const successModal = document.getElementById("success-modal");
+        const closeModalBtn = document.getElementById("close-modal-btn");
+        
+        contactForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            // Simple form validation
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
+            
+            if (!name || !email || !message) {
+                alert("Please fill in all required fields.");
+                return;
+            }
+            
+            // In a real implementation, you would send this data to a server
+            console.log("Form submitted:", { name, email, message });
+            
+            // Show success modal
+            successModal.classList.remove("hidden");
+            
+            // Reset form
+            contactForm.reset();
+        });
+
+        // Close modal handlers
+        closeModalBtn.addEventListener("click", () => {
+            successModal.classList.add("hidden");
+        });
+
+        successModal.addEventListener("click", (event) => {
+            if (event.target === successModal) {
+                successModal.classList.add("hidden");
+            }
+        });
+
+        // CTA Button Handlers (using event delegation for dynamically created elements)
+        const ctaButtons = ["contact-btn", "mobile-contact-btn", "hero-consultation-btn", "cta-consultation-btn", "hero-quote-btn", "cta-quote-btn"];
+        
+        ctaButtons.forEach(btnId => {
+            const btn = document.getElementById(btnId);
+            if (btn) {
+                btn.addEventListener("click", () => {
+                    document.getElementById("contact-form").scrollIntoView({ behavior: "smooth", block: "start" });
+                });
+            }
+        });
+
+        // Service Learn More buttons (event delegation)
+        document.addEventListener("click", function(event) {
+            if (event.target.closest(".service-learn-more")) {
+                const serviceBtn = event.target.closest(".service-learn-more");
+                const serviceIndex = serviceBtn.getAttribute("data-service");
+                const service = servicesData[serviceIndex];
+                
+                alert(`Learn more about: ${service.title}\n\n${service.description}`);
+            }
+        });
+
+        // Initialize page
+        document.addEventListener("DOMContentLoaded", () => {
+            // Add smooth animation classes to elements
+            const animatedElements = document.querySelectorAll(".animate-fade-in, .animate-slide-up");
+            animatedElements.forEach(el => {
+                el.style.opacity = "0";
+                el.style.transform = "translateY(20px)";
+            });
+            
+            // Trigger animations after a short delay
+            setTimeout(() => {
+                animatedElements.forEach((el, index) => {
+                    setTimeout(() => {
+                        el.style.opacity = "1";
+                        el.style.transform = "translateY(0)";
+                    }, index * 100);
+                });
+            }, 300);
+        });
+    </script>
+</body>
+</html>
